@@ -153,6 +153,7 @@ li {
     color: var(--cor-branco);
     border-radius: var(--border-radius-large);
     border: 1px solid rgba(255, 255, 255, 0.586);
+    z-index: 1;
   }
   
   .whatsapp-float i {
