@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@font-face {
+  font-family: Bakerie;
+
+  src: url("fontes/bakerie-rough-font-family-1915924/BakerieRough-Regular.otf");
+
+  format: ("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+
+    /* CORES */
+
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
+    --cor-principal: #5bc1ac;
+    --cor-secundaria: #5a6f80;
+    --background-secoes: #f0f8ff;
+    --background-secoes2: #717275;
+    --background-footer: #44525d;
+    --background-botao: #597081;
+    --background-botao-hover: #5bc1ac;
+    --cor-borda: #e9eaeb;
+
+    /* FONTES */
+
+    --fonte-principal: "Lexend Deca", sans-serif;
+    --font-logo: "Bakerie", sans-serif;
+    --font-logo2: "Open-Sans", sans-serif;
+
+    /* PESOS DE FONTES */
+
+    --fonte-peso-thin: 100;
+    --fonte-peso-extra-light: 200;
+    --fonte-peso-light: 300;
+    --fonte-peso-regular: 400;
+    --fonte-peso-medium: 500;
+    --fonte-peso-semi-bold: 600;
+    --fonte-peso-bold: 700;
+    --fonte-peso-extra-bold: 800;
+    --fonte-peso-black: 900;
+
+
+    /* BORDER-RADIUS */
+
+    --border-radius-large: 100px;
+    --border-radius-medium: 20px;
+    --border-radius-small: 10px;
+    --border-radius-botao: 5px;
+}
+
+html {
+    font-size: 62.5%;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    border-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-preto);
+    font-size: clamp(1.4rem, 1.8vw, 1.8rem); /* 14px → 18px */
+   
+}
+
+a:hover {
+    color: var(--cor-principal);
+}
+
+body {
+    background-color: var(--background-secoes);
+    width: 100%;
+    height: 100%;
+    font-family: var(--fonte-principal);
+}
+
+
+h1 {
+    font-size: clamp(2.8rem, 5vw, 4.8rem); /* 28px → 48px */
+    color: var(--cor-branco);
+
+    
+}
+
+h2 {
+    font-size: clamp(2.4rem, 4vw, 4rem);   /* 24px → 40px */
+    color: var(--cor-principal);
+}
+
+h3 {
+    font-size: clamp(2rem, 3.2vw, 3.2rem); /* 20px → 32px */
+}
+
+h4 {
+    font-size: clamp(1.6rem, 2.4vw, 2.4rem); /* 16px → 24px */
+}
+
+p {
+    font-size: clamp(1.4rem, 2vw, 1.8rem); /* 14px → 18px */
+    line-height: 1.6;
+    color: var(--cor-preto);
+  
+}
+
+li {
+    list-style: none;
+}
+
+.btn {
+    
+    color: var(--cor-branco);
+    background-color: var(--background-botao);
+    transition: 0.5s;
+    padding: 10px;
+    margin: 4px;
+    border-radius: var(--border-radius-medium);
+    display: block;
+    font-family: var(--fonte-principal);
+    font-size: clamp(1.4rem, 1.8vw, 1.8rem); /* 14px → 18px */
+   
+
+
+}
+
+.btn:hover {
+    background-color: var(--background-botao-hover);
+    transform: scale(1.1);
+    color: var(--cor-branco);
+}
+
+.whatsapp-float {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 50px;
+    right: 20px;
+    background-color: #5bc1ac;
+    font-size: 100px;
+    text-align: center;
+    color: var(--cor-branco);
+    border-radius: var(--border-radius-large);
+    border: 1px solid rgba(255, 255, 255, 0.586);
+  }
+  
+  .whatsapp-float i {
+    font-size: 60px;
+    text-align: center;
+  }
+  
+  .whatsapp-float:hover{
+    color: var(--cor-branco);
+    transform: scale(1.1);
+    transition: 1s;
+  
+  }
+  @media (max-width: 700px) {
+
+   .whatsapp-float {
+    width: 65px;
+    height: 65px;
+    font-size: 85px;
+
+   }
+
+   .whatsapp-float i {
+    font-size: 45px;
+   }
+
+  }
+
+
+
+
+
+  @media (max-width:400px ) {
+
+   .whatsapp-float {
+    width: 55px;
+    height: 55px;
+    font-size: 60px;
+   }   
+
+   .whatsapp-float i {
+
+    font-size: 40px;
+
+   }
+
+  }
+
+
+
+

@@ -1,0 +1,6 @@
+.avaliacao h2 {
+    color: var(--cor-principal);
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

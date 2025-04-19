@@ -1,0 +1,103 @@
+.menu-hamburguer {
+    background-color: var(--cor-branco);
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.337);
+    z-index: 3;
+
+
+}
+
+.menu-hamburguer a {
+    text-decoration: none;
+    margin: 15px;
+    flex: auto;
+    color: var(--cor-secundaria);
+
+
+}
+
+.menu-hamburguer a:hover {
+    color: var(--cor-principal);
+
+
+}
+
+.ctn {
+    color: var(--cor-branco) !important;
+}
+
+.botaomenu {
+    display: none;
+}
+
+
+@media (max-width:700px) {
+
+
+    .botaomenu {
+
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       position: absolute;
+       top: 5vh;
+       right: 5vw;
+        width: 5rem;
+        height: 5rem;
+        font-size: 2rem;
+        background-color: var(--cor-principal);
+        z-index: 1;
+        color: var(--cor-branco);
+        border-radius: var(--border-radius-large);
+        cursor: pointer;
+        z-index: 10;
+
+
+    }
+
+   
+
+     
+    .botaomenu:focus {
+        outline: none;
+    }
+
+
+
+
+    .menu-hamburguer {
+        height: 0px;
+       display: none;
+        background: var(--background-secoes);
+        opacity: 0;
+        /* Esconde o menu inicialmente */
+        visibility: hidden;
+        transform: translateY(-20px);
+        width: 100%;
+        
+
+    }
+
+
+
+
+    .menu-hamburguer.ativo {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        height: 500px;
+        font-size: 5rem;
+       
+
+    }
+
+}

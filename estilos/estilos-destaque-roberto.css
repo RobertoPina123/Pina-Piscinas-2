@@ -1,0 +1,80 @@
+.destaque-roberto {
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 10rem;
+background-color: var(--background-secoes2);
+}
+
+.destaque-roberto p {
+    font-size: 1.5rem !important;
+    text-align: center;
+    color: var(--cor-branco);
+   
+}
+
+.destaque-roberto img {
+  
+    border-radius: var(--border-radius-medium);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 100%;
+}
+ 
+.destaque-foto {
+    width: 25em;
+    height: 30rem;
+    background-color: orange;
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--border-radius-medium);
+    margin: 1rem;
+    bottom: 1rem;
+    
+   
+
+}
+
+.destaque-roberto-conteudo {
+   
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-flow: column ;
+    padding: 25px;
+    width: 30%;
+    
+}
+
+.destaque-roberto-conteudo-icone {
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: row;
+   
+    
+}
+
+.destaque-roberto-conteudo-icone i {
+    margin-top: 1rem;
+    padding: 5px;
+    font-size: 2.5rem;
+    color: var(--cor-branco);
+
+}
+
+
+@media (max-width: 700px) {
+    .destaque-roberto {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .destaque-foto {
+        width: 20rem;
+        height: 25rem;
+    }
+}
