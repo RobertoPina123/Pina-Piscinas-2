@@ -66,15 +66,35 @@ color: white;
     color: var(--cor-principal);
 }
 
+@media (max-width:750px) {
+
+    .parceria-web {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+    }
+    .parceria-web p {
+        font-size: 1.5rem;
+    }
+
+}
+
 @media (max-width:500px) {
 
 
     .zero {
         display: none;
     }
+
 }
 
+
+
 @media (max-width:450px){
+
+   
 
 
 .rodape {
