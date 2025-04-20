@@ -1,0 +1,91 @@
+.parceria-web  {
+ background-color: var(--background-secoes2);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ 
+
+ 
+}
+
+.parceria-web a {
+    color: orange;
+    transition: 1s;
+}
+
+.parceria-web a:hover {
+   color: cornflowerblue;
+}
+
+.parceria-web p {
+font-size: 1.5rem;
+color: white;
+
+}
+
+
+.parceria-rd-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parceria-rd-social i {
+    color: white;
+    padding: 5px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.zero {
+
+     width: 100px;
+     height: 100px;
+
+}
+
+
+.rodape-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rodape-logo img {
+   width: 7rem;
+   height: 7rem;
+   
+}
+
+.rodape-links {
+    margin: 10px;
+}
+
+.rodape-links h3 {
+    color: var(--cor-principal);
+}
+
+@media (max-width:500px) {
+
+
+    .zero {
+        display: none;
+    }
+}
+
+@media (max-width:450px){
+
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}    
+
+
+.rodape-links {
+    margin: 20px;
+}
+}
